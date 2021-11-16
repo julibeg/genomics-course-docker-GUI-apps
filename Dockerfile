@@ -10,4 +10,4 @@ EXPOSE 5900
 COPY main.sh /
 COPY ./programs ./programs
 RUN chmod +x main.sh
-ENTRYPOINT ["/main.sh"]
+ENTRYPOINT ["/startup.sh"]
