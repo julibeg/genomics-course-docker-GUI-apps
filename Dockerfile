@@ -7,7 +7,7 @@ RUN apt-get install -y xterm pcmanfm
 RUN 	apt-get clean
 EXPOSE 5900
 
-COPY main.sh /
+COPY startup.sh /
 COPY ./programs ./programs
-RUN chmod +x main.sh
+RUN chmod +x startup.sh
 ENTRYPOINT ["/startup.sh"]
